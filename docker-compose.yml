@@ -3,3 +3,4 @@ services:
   front:
     container_name: front
     restart: unless-stopped
+    build: .
