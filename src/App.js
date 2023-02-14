@@ -1,24 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
+import Container from 'react-bootstrap/Container';
+import Menu from './components/menu';
+import Footer from "./components/footer";
+import Landing from './components/landing';
+import Faq from './components/faq';
+import Roadmap from './components/roadmap'
+import Docs from './components/docs'
+import Whitepaper from './components/whitepaper'
+import Brokers from './components/brokers'
+import Marketmakers from './components/marketmakers'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Landing/>,
+  },
+  {
+    path: "/faq",
+    element: <Faq/>,
+  },
+  {
+    path: "/roadmap",
+    element: <Roadmap/>,
+  },
+  {
+    path: "/docs",
+    element: <Docs/>,
+  },
+  {
+    path: "/whitepaper",
+    element: <Whitepaper/>,
+  },
+  {
+    path: "/brokers",
+    element: <Brokers/>,
+  },
+  {
+    path: "/market-makers",
+    element: <Marketmakers/>,
+  },
+]);
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Menu/>
+    <Container style={{minHeight: "70vh"}}>
+        <br></br>
+        <br></br>
+      <RouterProvider router={router} />
+    </Container>
+    <Footer/>
+    </>
   );
 }
 

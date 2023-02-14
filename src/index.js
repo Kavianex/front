@@ -1,9 +1,17 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './App.scss';
 import './index.css';
+import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+// for footer  icons
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+// import 'bootstrap-css-only/css/bootstrap.min.css';
+// import 'mdbreact/dist/css/mdb.css';
+// end for footer  icons
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
