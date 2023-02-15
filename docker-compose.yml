@@ -3,6 +3,7 @@ services:
   front:
     container_name: front
     restart: unless-stopped
+    image: front
     build: .
     ports:
       - "3000:3000"
