@@ -1,4 +1,4 @@
-FROM node:16.18.1-alpine
+FROM node:16.19-alpine
 WORKDIR /app
 COPY ./package.json ./package.json
 RUN npm install -g serve
