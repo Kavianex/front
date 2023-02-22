@@ -113,7 +113,7 @@ export default function Footer() {
               </p>
               <p>
                 {/* <Envelope/> */}
-                kavianex@gmail.com
+                {process.env.REACT_APP_INFO_EMAIL}
               </p>
               {/* <p>
                 <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
