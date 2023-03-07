@@ -1,6 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import CryptoMarket from './cryptomarket';
+import CryptoMarket from './cryptomarket';
 
 function Landing(){
     return (
@@ -37,7 +37,8 @@ function Landing(){
                 </Col>
             </Row>
             <br></br>
-            {/* <CryptoMarket/> */}
+            <CryptoMarket/>
+            <br></br>
         </>
     )
 }
