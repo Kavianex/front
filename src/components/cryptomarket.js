@@ -25,13 +25,18 @@ export default function CryptoMarket() {
                             "name": "BINANCE:ETHUSDT",
                             "displayName": "Ethereum"
                         },
+                        {
+                            "name": "BINANCE:BNBUSDT",
+                            "displayName": "Binance Coin"
+                        },
                     ]
                 },
             ],
             "showSymbolLogo": true,
             "colorTheme": "light",
             "isTransparent": false,
-            "locale": "en"
+            "locale": "en",
+            "largeChartUrl": process.env.REACT_APP_APPLICATION_HOST,
             }
 
         );

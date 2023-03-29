@@ -16,7 +16,6 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol,
  } from 'mdb-react-ui-kit';
 
 export default function Footer() {
-  console.log(process.env);
   return (
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
